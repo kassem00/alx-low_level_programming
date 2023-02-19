@@ -1,20 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
-#define NUM_of_char 300
+#include <unistd.h>
 /**
- * Description: main-funcation {print text}
- * Return: 0 if it success.
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-char the_text[NUM_of_char]="and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-char comman[30]="echo -e'\n'";
-for(int i=0;i<NUM_of_char;i++){
-putchar(the_text[i]);
-if(the_text[i]=='\0'){
-break;
-}
-}
-system(comman);
-return (0);
+char the_text[80]= " and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+puts(the_text);
+return (1);
 }
