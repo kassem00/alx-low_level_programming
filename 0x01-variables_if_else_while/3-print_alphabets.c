@@ -19,7 +19,7 @@ alpha = 65;
 }
 if (alpha == 91)
 {
-break ;
+break;
 }
 }
 putchar('\n');
