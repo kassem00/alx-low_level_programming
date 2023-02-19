@@ -9,8 +9,8 @@ int main(void)
 {
 char alpha=97;
 while(alpha <= 122){
-alpha++;
 putchar((char)alpha);
+alpha++;
 }
 putchar('\n');
 return (0);
