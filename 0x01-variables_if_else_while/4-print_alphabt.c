@@ -7,12 +7,12 @@
 */
 int main(void)
 {
-char alpha = 96	;
+char alpha = 96;
 while (alpha < 122)
 {
 if (alpha == 112 || alpha == 100)
 {
-alpha = alpha + 1; 
+alpha = alpha + 1;
 }
 else
 {
