@@ -13,6 +13,6 @@ while (i < 10)
 putchar((char)i);
 i++;
 }
-putchar('\n');
+printf("\n");
 return (0);
 }
