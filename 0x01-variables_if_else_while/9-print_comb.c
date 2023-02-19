@@ -12,7 +12,11 @@ char alpha = 48;
 while (alpha <= 57)
 {
 putchar((char)alpha);
-if (alpha != 57)
+if (alpha == 57)
+{
+putchar('$');
+}
+else
 {
 putchar(',');
 putchar(' ');
