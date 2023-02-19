@@ -8,11 +8,17 @@
 */
 int main(void)
 {
-char alpha = 122;
-while (alpha > 96)
+char alpha = 48;
+while (alpha <= 57)
 {
 putchar((char)alpha);
-alpha--;
+alpha++;
+}
+alpha = 97;
+while (alpha <= 102)
+{
+putchar((char)alpha);
+alpha++;
 }
 putchar('\n');
 return (0);
