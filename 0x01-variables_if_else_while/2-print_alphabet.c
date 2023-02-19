@@ -7,8 +7,9 @@
 */
 int main(void)
 {
-char alpha=97;
-while(alpha <= 122){
+char alpha = 97;
+while (alpha <= 122)
+{
 putchar((char)alpha);
 alpha++;
 }
