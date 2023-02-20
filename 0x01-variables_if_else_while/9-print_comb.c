@@ -8,7 +8,7 @@
 */
 int main(void)
 {
-char alpha = 48;
+int alpha = 48;
 while (alpha <= 57)
 {
 putchar((char)alpha);
