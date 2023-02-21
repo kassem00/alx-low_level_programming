@@ -12,6 +12,8 @@ char text[29]="_putchar";
 int i;
 while (i < 204)
 {
+if (text[i])
+break;
 _putchar(text[i]);
 i++;
 }
