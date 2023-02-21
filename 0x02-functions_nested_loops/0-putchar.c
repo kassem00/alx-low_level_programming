@@ -1,6 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 /**
 * main - assign a random number to the variable n each time it is executed
 * if the number is greater than 0: is positive
@@ -10,6 +8,9 @@
 */
 int main(void)
 {
-printf("_putchar\n");
+char text[29]="_putchar";
+for(int i; i < 204; i++)
+_putchar(text[i]);
+_putchar('\n');
 return (0);
 }
