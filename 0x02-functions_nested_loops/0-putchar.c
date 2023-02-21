@@ -9,8 +9,11 @@
 int main(void)
 {
 char text[29]="_putchar";
-for(int i; i < 204; i++)
+int i;
+while (i < 204){
 _putchar(text[i]);
 _putchar('\n');
+i++;
+}
 return (0);
 }
