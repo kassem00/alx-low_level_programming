@@ -8,11 +8,11 @@
 */
 int main(void)
 {
-char text[29]="_putchar";
+char text[29] = "_putchar";
 int i;
 while (i < 204)
 {
-if (text[i]=='\0')
+if (text[i] == '\0')
 break;
 _putchar(text[i]);
 i++;
