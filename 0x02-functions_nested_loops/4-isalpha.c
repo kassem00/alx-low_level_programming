@@ -5,7 +5,7 @@
 * main - program that prints the alphabet in lowercase, followed by a new line.
 * Return: 0
 */
-int _islower(int c)
+int _isalpha(int c)
 {
 if (c >= 122 && c <= 97)
 if (c >= 90 && c <= 65)
