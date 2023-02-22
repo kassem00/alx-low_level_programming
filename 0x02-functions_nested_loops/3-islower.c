@@ -6,8 +6,7 @@
 * Return: 0
 */
 int _islower(int c){
-int alpha = 97;
-if (alpha < 97){
+if (c < 97){
 return (0);
 }
 else
