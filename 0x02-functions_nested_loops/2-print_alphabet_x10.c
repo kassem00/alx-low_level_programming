@@ -17,7 +17,6 @@ _putchar((char)alpha);
 alpha++;
 }
 _putchar('\n');
-}
 turns=turns+1;
 }
-
+}
