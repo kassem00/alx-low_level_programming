@@ -19,6 +19,7 @@ x = -1;
 }
 if (n == 0)
 {
+_putchar((char)48);
 x = 0;
 }
 return (x);
