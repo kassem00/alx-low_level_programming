@@ -7,7 +7,7 @@
 */
 void print_alphabet_x10(void)
 {
-int turns = 10;
+int turns = 0;
 while(turns < 10)
 {
 char alpha = 97;
