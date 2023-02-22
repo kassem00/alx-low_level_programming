@@ -9,7 +9,7 @@
 int main(void)
 {
 char text[29] = "_putchar";
-int i=0;
+int i = 0;
 while (i < 204)
 {
 if (text[i] == '\0')
