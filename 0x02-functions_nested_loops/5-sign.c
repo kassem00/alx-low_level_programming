@@ -11,18 +11,13 @@ int x;
 if (n > 0)
 {
 x = 1;
-_putchar((char)43);
-_putchar((char)49);
 }
 if (n < 0){
 x = -1;
-_putchar((char)45);
-_putchar((char)49);
 }
 if (n == 0)
 {
 x = 0;
-_putchar('0');
 }
 return (x);
 }
