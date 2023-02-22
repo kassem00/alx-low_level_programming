@@ -1,9 +1,8 @@
 #include "main.h"
 /**
-* print_sign - function that is lowercase?
-* @n: The input character
-* main - program that prints the alphabet in lowercase, followed by a new line.
-* Return: 0
+* _abs - function that is lowercase?
+* @x: The input value.
+* Return: x
 */
 int _abs(int x)
 {
