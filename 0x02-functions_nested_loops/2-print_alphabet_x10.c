@@ -1,4 +1,4 @@
-#include "2-print_alphabet_x10.h"
+#include "main.h"
 /**
 * print_alphabet_x10 - function that prints the alphabet, in lowercase,
 * followed by a new line.

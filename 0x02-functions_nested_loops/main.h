@@ -1,6 +1,6 @@
 #ifndef wa
 #define wa
-#include "2-print_alphabet_x10.h"
+void print_alphabet_x10(void);
 int _putchar(char c);
 void print_alphabet(void);
 #endif
