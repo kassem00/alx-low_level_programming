@@ -12,7 +12,7 @@ while(turns < 10)
 char alpha = 97;
 while (alpha <= 122)
 {
-_putchar((char)alpha);
+_putchar(alpha);
 alpha++;
 }
 _putchar('\n');
