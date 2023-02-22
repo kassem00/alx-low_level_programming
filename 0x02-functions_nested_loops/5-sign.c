@@ -11,7 +11,8 @@ int x;
 if (n > 0)
 {
 x = 1;
-_putchar('1');
+_putchar((char)43);
+_putchar((char)49);
 }
 if (n < 0){
 x = -1;
