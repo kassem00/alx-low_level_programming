@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _islower - function that is lowercase?
+* _isalpha - function that is lowercase?
 * @c: The input character
 * main - program that prints the alphabet in lowercase, followed by a new line.
 * Return: 0
