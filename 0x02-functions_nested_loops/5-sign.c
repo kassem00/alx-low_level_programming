@@ -7,13 +7,14 @@
 */
 int print_sign(int n)
 {
-int x=0;
+int x = 0;
 if (n > 0)
 {
 _putchar((char)43);
 x = 1;
 }
-if (n < 0){
+if (n < 0)
+{
 _putchar((char)45);
 x = -1;
 }
