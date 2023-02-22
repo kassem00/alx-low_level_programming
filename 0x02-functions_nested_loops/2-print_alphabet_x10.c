@@ -13,11 +13,11 @@ while(turns < 10)
 char alpha = 97;
 while (alpha <= 122)
 {
-_putchar(alpha);
+_putchar((char)alpha);
 alpha++;
 }
 _putchar('\n');
 }
-turns++;
+turns=turns+1;
 }
 
