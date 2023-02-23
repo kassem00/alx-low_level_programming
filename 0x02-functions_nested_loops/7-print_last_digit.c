@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*  print_last_digit_abs - function that is lowercase?
+*  print_last_digit - function that is lowercase?
 * @x: The input value.
 * Return: x
 */
