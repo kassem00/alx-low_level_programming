@@ -15,7 +15,7 @@ _putchar(':');
 _putchar(mi_s_dig + '0');
 _putchar(mi_f_dig + '0');
 _putchar('\n');
-if(mi_f_dig == 9)
+if (mi_f_dig == 9)
 {
 if (mi_s_dig == 5)
 {
@@ -28,7 +28,7 @@ mi_f_dig = 0;
 }
 else
 {
-if(hu_f_dig == 3 && hu_s_dig == 2)
+if (hu_f_dig == 3 && hu_s_dig == 2)
 break;
 hu_f_dig++;
 mi_s_dig = 0;
