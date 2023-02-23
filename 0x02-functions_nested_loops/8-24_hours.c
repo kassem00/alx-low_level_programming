@@ -7,7 +7,7 @@
 void jack_bauer(void)
 {
 int hu_f_dig=0,hu_s_dig=0,mi_f_dig=0,mi_s_dig=0;
-while (hu_s_dig <= 2 && hu_f_dig <= 3 && mi_s_dig <= 5 && mi_f_dig <= 9)
+while ((hu_s_dig <= 2  ) && (mi_s_dig <= 5 && mi_f_dig <= 9))
 {
 _putchar(hu_s_dig+ '0');
 _putchar(hu_f_dig+ '0');
@@ -22,13 +22,15 @@ if (mi_s_dig == 5)
 {
 if (hu_f_dig == 9){
 hu_s_dig++;
-hu_f_dig=0;
+hu_f_dig = 0;
 mi_s_dig = 0;
 mi_f_dig = 0;
 }else{
+if(hu_f_dig == 3 && hu_s_dig == 2)
+break;
+hu_f_dig++;
 mi_s_dig = 0;
 mi_f_dig = 0;
-hu_f_dig++;
 }
 }
 else
