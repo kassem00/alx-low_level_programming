@@ -15,7 +15,7 @@ i++;
 }
 while( x < 50)
 {
-printf("%d\n", z[x]);
+printf("%d, ", z[x+1]);
 x++;
 }
 return (0);
