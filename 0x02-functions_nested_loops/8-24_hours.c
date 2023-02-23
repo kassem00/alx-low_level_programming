@@ -6,7 +6,7 @@
 */
 void jack_bauer(void)
 {
-int hu_f_dig = 0,hu_s_dig = 0,mi_f_dig = 0,mi_s_dig = 0;
+int hu_f_dig = 0, hu_s_dig = 0, mi_f_dig = 0, mi_s_dig = 0;
 while ((hu_s_dig <= 2) && (mi_s_dig <= 5 && mi_f_dig <= 9))
 {
 _putchar(hu_s_dig + '0');
