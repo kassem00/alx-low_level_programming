@@ -8,7 +8,7 @@
 * if the number is less than 0: is negative
 * Return: 0
 */
-int main(void)
+void positive_or_negative(int i)
 {
 int n;
 srand(time(0));
@@ -25,5 +25,4 @@ else
 {
 printf("%d is negative\n", n);
 }
-return (0);
 }
