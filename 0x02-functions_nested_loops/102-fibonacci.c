@@ -5,14 +5,18 @@ int main()
 {
 int y[60]={1,1};
 int z[100];
-int i=7;
-for(int i=0;i<60;i++){
+int i=0;
+while(i<60)
+{
 y[i+2]=y[i]+y[i+1];
 z[i]=y[i];
+i++;
 }
-for (int x = 0; x < 50; x++)
+int x = 0;
+while( x < 50)
 {
 printf("%d\n", z[x]);
+x++;
 }
 return (0);
 }
