@@ -17,12 +17,15 @@ multiplication_temp = (ROW * column);
 if (multiplication_temp < 10)
 {
 if (column != 0)
-_putchar(' '+' ');
+{
+_putchar((char)32);
+_putchar((char)32);
+}
 _putchar(multiplication_temp + '0');
 }
 else
 {
-_putchar(' ');
+_putchar((char)32);
 _putchar((multiplication_temp / 10) + '0');
 _putchar((multiplication_temp % 10) + '0');
 }
