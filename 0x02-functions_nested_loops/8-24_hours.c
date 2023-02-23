@@ -15,7 +15,6 @@ _putchar(':');
 _putchar(mi_s_dig + '0');
 _putchar(mi_f_dig + '0');
 _putchar('\n');
-
 if(mi_f_dig == 9)
 {
 if (mi_s_dig == 5)
@@ -48,10 +47,3 @@ mi_f_dig++;
 }
 }
 }
-/**
- 
- */
-
-/*
-
-*/
