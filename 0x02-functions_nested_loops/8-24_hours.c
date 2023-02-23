@@ -20,12 +20,15 @@ if(mi_f_dig == 9)
 {
 if (mi_s_dig == 5)
 {
-if (hu_f_dig == 9){
+if (hu_f_dig == 9)
+{
 hu_s_dig++;
 hu_f_dig = 0;
 mi_s_dig = 0;
 mi_f_dig = 0;
-}else{
+}
+else
+{
 if(hu_f_dig == 3 && hu_s_dig == 2)
 break;
 hu_f_dig++;
