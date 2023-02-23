@@ -17,7 +17,7 @@ multiplication_temp = (ROW * column);
 if (multiplication_temp < 10)
 {
 if (column != 0)
-_putchar('\t');
+_putchar(' '+' ');
 _putchar(multiplication_temp + '0');
 }
 else
