@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-*  print_last_digit_abs - function that is lowercase?
-* @x: The input value.
-* Return: x
+*  jack_bauer - function that is lowercase?
+* Return: void
 */
 void jack_bauer(void)
 {
