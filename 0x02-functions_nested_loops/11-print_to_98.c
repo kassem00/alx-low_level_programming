@@ -20,7 +20,13 @@ if (n > 98)
 {
 for (; n >= 98; n--)
 {
-(n==98)?(printf("%d ", n);):(printf("%d, ", n););
+if (n==98)
+{
+printf("%d ", n);
+}
+else
+{
+printf("%d, ", n);
 }
 }
 if (n == 98)
