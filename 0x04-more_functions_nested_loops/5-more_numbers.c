@@ -1,4 +1,4 @@
-#include "main.h"
+#include"main.h"
 /**
  * more_numbers -  function that prints 10 times the numbers, from 0 to 14.
  *
@@ -15,9 +15,9 @@ while (y <= 14)
 if (y > 9)
 _putchar((y / 10) + '0');
 _putchar((y % 10) + '0');
-y++
+y++;
 }
 _putchar('\n');
-x++
+x++;
 }
 }
