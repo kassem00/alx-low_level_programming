@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <string.h>
 /**K
  * _strlen - rest funcation
  * @s: pointer to char
@@ -9,12 +10,14 @@
 int _strlen(char *s)
 {
 int i = 0;
-while(i < 0)
+char temp;
+while(i < i+1)
 {
-if(*s[i]=='\0')
+temp = s[i];
+if(temp=='\0')
 break;
 else
 i++;
 }
-return (i)
+return (i);
 }
