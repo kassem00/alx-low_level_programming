@@ -13,11 +13,13 @@ int i=0;
 char temp;
 while(i<i+1){
 temp = str[i];
-_putchar(temp);
 if (temp == '\0')
 break;
 else
+{
 i++;
+_putchar(temp);
+}
 }
 _putchar('\n');
 }
