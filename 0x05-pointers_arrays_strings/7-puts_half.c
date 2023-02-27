@@ -23,5 +23,4 @@ else
 {
 /*odd*/
 }
-_putchar('\n');
 }
