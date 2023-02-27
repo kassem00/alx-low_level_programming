@@ -10,7 +10,7 @@
 
 void puts_half(char *str)
 {
-if(strlen(str) % 2 == 0)
+if (strlen(str) % 2 == 0)
 {
 size_t i = strlen(str) / 2;
 while (i <= strlen(str))
@@ -18,7 +18,9 @@ while (i <= strlen(str))
 _putchar(str[i]);
 i++;
 }
-}else{
+}
+else
+{
 /*odd*/
 }
 }
