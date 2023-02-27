@@ -15,8 +15,8 @@ if (strlen(str) % 2 == 0)
 {
 while (i < strlen(str))
 {
-_putchar(str[i]);
 i++;
+_putchar(str[i]);
 }
 }
 else
