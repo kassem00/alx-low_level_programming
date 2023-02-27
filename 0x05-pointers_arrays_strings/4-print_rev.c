@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _puts - function that returns the length of a string.
- * @str: pointer to char
+ * print_rev -  function that prints a string, in reverse, followed by a new line.
+ * @s: pointer to char
  * Return: void
  */
 
