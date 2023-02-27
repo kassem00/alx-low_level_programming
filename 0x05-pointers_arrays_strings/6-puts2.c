@@ -2,25 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * rev_string -  function that prints a string,
+ * puts2 -  function that prints a string,
  * in reverse, followed by a new line.
- * @s: pointer to char
+ * @str: pointer to char
  * Return: void
  */
 
-void rev_string(char *s)
+void puts2(char *str);
 {
-int i = strlen(s), j = 0;
-char temp[600];
-while (i > 0)
-{
-i--;
-temp[j] = s[i];
-j++;
-}
-while (i < j)
-{
-s[i] = temp[i];
-i++;
-}
+
 }
