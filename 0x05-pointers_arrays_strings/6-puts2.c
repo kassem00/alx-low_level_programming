@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-#include "holberton.h"
 
 /**
  * puts2 - function that prints every other character of a string
