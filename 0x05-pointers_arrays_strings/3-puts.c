@@ -11,7 +11,8 @@ void _puts(char *str)
 {
 int i = 0;
 char temp;
-while(i < i + 1){
+while (i < i + 1)
+{
 temp = str[i];
 if (temp == '\0')
 break;
