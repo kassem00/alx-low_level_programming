@@ -16,7 +16,7 @@ size_t i = strlen(str) / 2;
 while (i < strlen(str))
 {
 _putchar(str[i]);
-i++
+i++;
 }
 }else{
 /*odd*/
