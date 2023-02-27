@@ -19,4 +19,5 @@ break;
 else
 i++;
 }
+_putchar('\n');
 }
