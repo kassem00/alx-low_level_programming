@@ -5,8 +5,8 @@
 /**
  * print_array - function that prints array
  * @n: number of elements
- * @a: array of int 
- * Return: void 
+ * @a: array of int
+ * Return: void
  */
 
 void print_array(int *a, int n)
