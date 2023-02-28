@@ -3,9 +3,10 @@
 #include <string.h>
 
 /**
- * puts_half - function that prints every other character of a string
- * @str: pointer to char
- * Return: nothing
+ * print_array - function that prints array
+ * @n: number of elements
+ * @a: array of int 
+ * Return: void 
  */
 
 void print_array(int *a, int n)
