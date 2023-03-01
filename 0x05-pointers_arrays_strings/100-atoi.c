@@ -30,11 +30,11 @@ i++;
 }
 else
 {
-n = n * 10 ;
+n = n * 10;
 n = n - (s[i] - 48);
 i++;
 }
 }
 sign = sign * -1;
-return (n * sign);
+return (n *sign);
 }
