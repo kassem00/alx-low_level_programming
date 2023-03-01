@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * reset_to_98 - rest funcation
+ * *_strcat - rest funcation
  * @n: pointer to int
  *
  * Return: void
  */
 
-void reset_to_98(int *n)
+char *_strcat(char *dest, char *src)
 {
 *n = 98;
 }
