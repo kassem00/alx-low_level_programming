@@ -1,4 +1,7 @@
 #include "main.h"
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 #define TH_end '\0'
 /**
  * *_strcat - rest funcation
@@ -9,11 +12,10 @@
 
 char *_strcat(char *dest, char *src)
 {
-int i = 0;
 char *temp = dest + strlen(dest);
 while (*src != '\0') {
 *temp++ = *src++;
 }
-*ptr = TH_end;
-return (*dest);
+*temp = TH_end;
+return (dest);
 }
