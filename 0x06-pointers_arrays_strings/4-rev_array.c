@@ -3,7 +3,6 @@
 #include <string.h>
 /**
  * reverse_array - function that reverse_array.
- * in reverse, followed by a new line.
  * @a: pointer to int.
  * @n: int.
  * Return: void.
@@ -23,4 +22,5 @@ while (n < j)
 a[n] = temp[n];
 n++;
 }
+printf("\n");
 }
