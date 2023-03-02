@@ -18,7 +18,7 @@ n--;
 temp[j] = a[n];
 j++;
 }
-while (n <= j)
+while (n < j)
 {
 a[n] = temp[n];
 n++;
