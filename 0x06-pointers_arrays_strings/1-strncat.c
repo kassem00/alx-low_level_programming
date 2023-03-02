@@ -4,9 +4,10 @@
 #include <stdlib.h>
 #define TH_end '\0'
 /**
- * *_stnrcat - function that concatenates two strings.
+ * *_strncat - function that concatenates two strings.
  * @dest: pointer to char.
  * @src: pointer to char.
+ * @n: number of charcter.
  * Return: char.
  */
 
