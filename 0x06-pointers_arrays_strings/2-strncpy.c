@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * *_strncpy - function that concatenates two strings.
+ * *_strncpy - function that copy strings.
  * @dest: pointer to char.
  * @src: pointer to char.
  * @n: number of charcter.
@@ -17,6 +17,7 @@ while (*(src + u) != '\0' && u < n)
 *(dest + u) = *(src + u);
 u++;
 }
+while (u != n)
 dest[u++] = '\0';
 return (dest);
 }
