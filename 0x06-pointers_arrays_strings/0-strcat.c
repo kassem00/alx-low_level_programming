@@ -5,9 +5,9 @@
 #define TH_end '\0'
 /**
  * *_strcat - rest funcation
- * @n: pointer to int
- *
- * Return: void
+ * @dest: pointer to int
+ * @src: pointer to int
+ * Return: char
  */
 
 char *_strcat(char *dest, char *src)
