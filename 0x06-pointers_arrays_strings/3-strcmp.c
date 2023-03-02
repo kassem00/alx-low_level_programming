@@ -12,14 +12,20 @@
 
 int _strcmp(char *s1, char *s2)
 {
-const int xa = strlen(s1);
 int u = 0;
-char temp[x1];
-while (temp[u] != '\0')
+while (s1[u] != '\0'){
+if (s1[u] < s2[u])
 {
-temp[u] = *s1[u];
+return (*(s1 + u) - *(s2 + u));
+}
+else
+{
+if (s1[u] > s2[u])
+{
+return (*(s1 + u) - *(s2 + u));
+}
+}
 u++;
 }
-s2 = &temp;
-return (*s2 -*s1);
+return (0);
 }
