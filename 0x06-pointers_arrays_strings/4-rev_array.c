@@ -4,8 +4,8 @@
 /**
  * reverse_array -  function that reverse_array
  * in reverse, followed by a new line.
- * @a: pointer to int 
- * @n:  int 
+ * @a: pointer to int
+ * @n: int
  * Return: void
  */
 
@@ -19,7 +19,6 @@ n--;
 temp[j] = a[n];
 j++;
 }
-
 while (n < j)
 {
 a[n] = temp[n];
