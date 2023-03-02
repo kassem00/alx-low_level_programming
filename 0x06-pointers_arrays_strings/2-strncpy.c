@@ -4,22 +4,22 @@
 #include <stdlib.h>
 #define TH_end '\0'
 /**
- * *_strncat - function that concatenates two strings.
+ * *_strncpy - function that concatenates two strings.
  * @dest: pointer to char.
  * @src: pointer to char.
  * @n: number of charcter.
  * Return: char.
  */
-
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 int u = 0;
-char *temp = dest + strlen(dest);
-while (*src != '\0' && u < n)
+while (temp[u] != '\0' && u < n)
 {
-*temp++ = *src++;
+*dest[u]=*src[u];
 u++;
 }
-*temp = TH_end;
+u++;
+dest[u] = '\0';
 return (dest);
 }
+
