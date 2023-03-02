@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * reverse_array -  function that reverse_array
+ * reverse_array - function that reverse_array.
  * in reverse, followed by a new line.
- * @a: pointer to int
- * @n: int
- * Return: void
+ * @a: pointer to int.
+ * @n: int.
+ * Return: void.
  */
 void reverse_array(int *a, int n)
 {
