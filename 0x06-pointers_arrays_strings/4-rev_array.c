@@ -8,10 +8,9 @@
  * @n: int
  * Return: void
  */
-
 void reverse_array(int *a, int n)
 {
-int  j = 0;
+int j = 0;
 int temp[600];
 while (n > 0)
 {
