@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 /**
  * reverse_array - function that reverse_array.
  * @a: pointer to int.
