@@ -4,10 +4,10 @@
 #include <stdlib.h>
 #define TH_end '\0'
 /**
- * *_strcat - rest funcation
- * @dest: pointer to int
- * @src: pointer to int
- * Return: char
+ * *_strcat - rest funcation.
+ * @dest: pointer to char.
+ * @src: pointer to char.
+ * Return: char.
  */
 
 char *_strcat(char *dest, char *src)
