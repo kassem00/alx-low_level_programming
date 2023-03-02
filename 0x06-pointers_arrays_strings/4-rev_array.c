@@ -22,5 +22,4 @@ while (n < j)
 a[n] = temp[n];
 n++;
 }
-printf("\n");
 }
