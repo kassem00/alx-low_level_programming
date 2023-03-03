@@ -23,7 +23,7 @@ if (*(str + n) == ' ' || *(str + n) == '\n' || *(str + n) == '\t'
 n++;
 if (*(str + n) >= 97 && *(str + n) <= 122)
 {
-*(str + n) = *(str + n) - ' ';
+*(str + n) = *(str + n) -' ';
 }
 }
 else
