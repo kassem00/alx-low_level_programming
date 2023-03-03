@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * cap_string - Capitalizes 
  * @str: The string.
@@ -7,27 +6,28 @@
  */
 char *cap_string(char *str)
 {
-int phres = 0;
-while (str[phres])
+int n = 0;
+while (*(str + n) != '\0')
 {
-while (!(str[phres] >= 'a' && str[phres] <= 'z'))
-phres++;
-if (str[phres - 1] == ' ' ||
-str[phres - 1] == '\t' ||
-str[phres - 1] == '\n' ||
-str[phres - 1] == ',' ||
-str[phres - 1] == ';' ||
-str[phres - 1] == '.' ||
-str[phres - 1] == '!' ||
-str[phres - 1] == '?' ||
-str[phres - 1] == '"' ||
-str[phres - 1] == '(' ||
-str[phres - 1] == ')' ||
-str[phres - 1] == '{' ||
-str[phres - 1] == '}' ||
-phres == 0)
-str[phres] -= 32;
-phres++;
+if (n == 0 && (*(str + n) >= 97 && *(str + n) <= 122))
+{
+*(str + n) = *(str + n) - ' ';
+n++;
+}
+if (*(str + n) == ' ' || *(str + n) == '\n' || *(str + n) == '\t'
+|| *(str + n) == ',' || *(str + n) == ';' || *(str + n) == '!'
+|| *(str + n) == '?' || *(str + n) == '"' || *(str + n) == '('
+|| *(str + n) == ')' || *(str + n) == '{' || *(str + n) == '}'
+|| *(str + n) == '.')
+{
+n++;
+if (*(str + n) >= 97 && *(str + n) <= 122)
+{
+*(str + n) = *(str + n) - ' ';
+}
+}
+else
+n++;
 }
 return (str);
 }
