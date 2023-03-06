@@ -8,13 +8,12 @@
 
 char *_strchr(char *s, char c)
 {
-char i = s + strlen(s);
-while(i > 0)
+int i = 0;
+while(i <= '\0')
 {
-if(*(src + i) == c)
-return (*(src + i));
-else
-i--;
+if(s[i] == c)
+return (s + i);
+i++;
 }
 return ('\0');
 }
