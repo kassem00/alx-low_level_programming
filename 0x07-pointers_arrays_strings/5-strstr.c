@@ -1,28 +1,28 @@
 #include "main.h"
 /**
- * _strstr - rest funcation.
+ * _strstr - bt funcation.
  * @haystack: pointer to char.
  * @needle: pointer to char.
  * Return: char.
  */
+
 char *_strstr(char *haystack, char *needle)
 {
-int i;
-if (*needle == 0)
-return (haystack);
-while (*haystack)
+char *b;
+char *x;
+while (*haystack != '\0')
 {
-i = 0;
-if (haystack[i] == needle[i])
+b = haystack;
+x = needle;
+while (*x == *haystack && *x != '\0'
+&& *haystack != '\0')
 {
-do {
-if (needle[i + 1] == '\0')
-return (haystack);
-i++;
-}
-while (haystack[i] == needle[i]);
-}
 haystack++;
+x++;
 }
-return ('\0');
+if (*x == '\0')
+return (b);
+haystack = b + 1;
+}
+return (NULL);
 }
