@@ -8,10 +8,14 @@
  * Return: char.
  */
 
-char *_memset(char *s, char b, unsigned int n);
+char *_memset(char *s, char b, unsigned int n)
 {
-int i;
-for (i = 0;s[i] != '\0' && i < n;i++){
+unsigned int i = 0;
+char *re = s;
+while (s[i] != '\0' && i < n)
+{
 s[i]=b;
+i++;
 }
+return (re);
 }
