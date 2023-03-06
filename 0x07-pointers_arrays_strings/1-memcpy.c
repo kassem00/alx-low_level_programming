@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - uppercase letters
+ * _memcpy - cpy
  * @dest: input char
  * @src: input char
  * @n: input unsigned int
