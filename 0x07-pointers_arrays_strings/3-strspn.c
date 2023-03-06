@@ -3,7 +3,7 @@
  * _strspn - rest funcation.
  * @s: pointer to char.
  * @accept: pointer to char.
- * Return: char.
+ * Return: unsigned int.
  */
 unsigned int _strspn(char *s, char *accept)
 {
