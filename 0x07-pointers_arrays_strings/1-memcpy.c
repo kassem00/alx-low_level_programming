@@ -2,8 +2,8 @@
 
 /**
  * _memset - uppercase letters
- * @s: input char
- * @b: input char
+ * @dest: input char
+ * @src: input char
  * @n: input char
  * Return: char.
  */
