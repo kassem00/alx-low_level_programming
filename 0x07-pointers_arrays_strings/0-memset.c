@@ -2,9 +2,9 @@
 
 /**
  * _memset - uppercase letters
- * @s: char to check
- * @b:
- * @n:
+ * @s: input char
+ * @b: input char
+ * @n: input char
  * Return: char.
  */
 
@@ -14,7 +14,7 @@ unsigned int i = 0;
 char *re = s;
 while (i < n)
 {
-s[i]=b;
+s[i] = b;
 i++;
 }
 return (re);
