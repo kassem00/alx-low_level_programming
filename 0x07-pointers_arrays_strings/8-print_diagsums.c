@@ -6,7 +6,7 @@
  * Return: void.
  */
 
-void print_diagnum1s(int *a, int size)
+void print_diagsums(int *a, int size)
 {
 int i = 0;
 int temp = 0;
