@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * set_string - bt funcation.
- * @a: int.
- * @size: int.
+ * @to: int.
+ * @s: int.
  * Return: void.
  */
 
