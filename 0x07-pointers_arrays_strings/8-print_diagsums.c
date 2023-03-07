@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_diagnum1s - bt funcation.
+ * print_diagsums - bt funcation.
  * @a: int.
  * @size: int.
  * Return: void.
