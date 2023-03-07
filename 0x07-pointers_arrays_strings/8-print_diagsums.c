@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * print_diagnum1s - bt funcation.
- * @a: pointer to char.
- * @size: pointer to char.
+ * @a: int.
+ * @size: int.
  * Return: void.
  */
 
