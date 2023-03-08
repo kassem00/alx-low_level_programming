@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * factorial - function that prints a string in reverse.
- * @s: input char
+ * @n: input char
  * Return: int.
  */
 int factorial(int n)
