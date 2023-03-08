@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- * _pow_recursion - function that prints a string in reverse.
- * @n: input char
+ * _pow_recursion - power of number x.
+ * @x: input int.
+ * @y: input int.
  * Return: int.
  */
 int _pow_recursion(int x, int y)
 {
-if (n < 0)
+if (y < 0)
 return (-1);
 else
 if(y == 0)
