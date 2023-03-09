@@ -17,9 +17,5 @@ s1++;
 s2++;
 wildcmp(s1,s2);
 }
-else
-return (0);
-}
-else
 return (x);
 }
