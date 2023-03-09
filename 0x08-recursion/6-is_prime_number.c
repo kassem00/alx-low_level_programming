@@ -13,7 +13,7 @@ else if (n == 1)
 return (0);
 else
 if (C_P(2, n) == 0)
-return(1);
+return (1);
 else
 return (0);
 }
@@ -23,7 +23,7 @@ return (0);
  * @i: input int
  * Return: int.
  */
-int C_P(int i,int n)
+int C_P(int i, int n)
 {
     if(n==i)
         return 0;
