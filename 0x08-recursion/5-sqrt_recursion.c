@@ -27,7 +27,7 @@ int get_number(int number, int multi)
 if (number == (multi * multi))
 return (multi);
 else if (number > (multi * multi))
-return (getnumber(number, multi + 1));
+return (get_number(number, multi + 1));
 else
 return (-1);
 }
