@@ -17,7 +17,7 @@ return (1);
 return (get_number(n, 1));
 }
 /**
- * _sqrt_recursion -  function that returns the natural square,
+ * get_number -  function that returns the natural square,
  * root of a numberber.
  * @n: input char
  * Return: int.
