@@ -25,12 +25,13 @@ return (0);
  */
 int C_P(int i, int n)
 {
-    if(n == i)
-        return (0);
-    else
-        if(n%i == 0)
-            return (1);
-    else{
-        return C_P(i + 1, n);
-    }
+if(n == i)
+return (0);
+else
+if(n%i == 0)
+return (1);
+else
+{
+return C_P(i + 1, n);
+}
 }
