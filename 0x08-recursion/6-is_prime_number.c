@@ -25,10 +25,10 @@ return (0);
  */
 int C_P(int i, int n)
 {
-if(n == i)
+if (n == i)
 return (0);
 else
-if(n%i == 0)
+if (n % i == 0)
 return (1);
 else
 {
