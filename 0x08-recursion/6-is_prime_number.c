@@ -31,7 +31,5 @@ else
 if (n % i == 0)
 return (1);
 else
-{
 return C_P(i + 1, n);
-}
 }
