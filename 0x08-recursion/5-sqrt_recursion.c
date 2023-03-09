@@ -19,7 +19,8 @@ return (get_number(n, 1));
 /**
  * get_number -  function that returns the natural square,
  * root of a numberber.
- * @n: input char
+ * @number: input int
+ * @multi: input int
  * Return: int.
  */
 int get_number(int number, int multi)
