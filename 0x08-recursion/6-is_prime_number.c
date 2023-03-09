@@ -17,6 +17,12 @@ return(1);
 else
 return (0);
 }
+/**
+ * C_P -function that check if input integer is a prime nber.
+ * @n: input int
+ * @i: input int
+ * Return: int.
+ */
 int C_P(int i,int n)
 {
     if(n==i)
