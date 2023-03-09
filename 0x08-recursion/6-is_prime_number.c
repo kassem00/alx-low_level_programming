@@ -5,7 +5,7 @@
  * @n: input char
  * Return: int.
  */
-int is_prime_nber(int n);
+int is_prime_number(int n);
 {
 if (n < 0)
 return (-1);
