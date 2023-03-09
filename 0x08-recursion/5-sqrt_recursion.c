@@ -14,7 +14,7 @@ if (n == 0)
 return (0);
 if (n == 1)
 return (1);
-return (getnumber(n,1));
+return (get_number(n,1));
 }
 /**
  * _sqrt_recursion -  function that returns the natural square,
