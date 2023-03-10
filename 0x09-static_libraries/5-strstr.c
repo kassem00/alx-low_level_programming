@@ -5,24 +5,23 @@
  * @needle: pointer to char.
  * Return: char.
  */
-
 char *_strstr(char *haystack, char *needle)
 {
-char *b;
-char *x;
+char *res;
+char *aux;
 while (*haystack != '\0')
 {
-b = haystack;
-x = needle;
-while (*x == *haystack && *x != '\0'
+res = haystack;
+aux = needle;
+while (*aux == *haystack && *aux != '\0'
 && *haystack != '\0')
 {
 haystack++;
-x++;
+aux++;
 }
-if (*x == '\0')
-return (b);
-haystack = b + 1;
+if (*aux == '\0')
+return (res);
+haystack = res + 1;
 }
 return (NULL);
 }
