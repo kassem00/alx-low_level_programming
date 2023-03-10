@@ -8,8 +8,9 @@
  */
 int main(int argc, char **argv)
 {
-printf("%d\n", argc);
-**argv=argc;
+if (argc > 0)
+printf("%d\n", argc-1);
+**argv=	argc;
 exit(EXIT_SUCCESS);
 return (0);
 }
