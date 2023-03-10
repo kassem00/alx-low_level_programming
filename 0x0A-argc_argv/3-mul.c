@@ -21,7 +21,7 @@ num = atoi(*(argv + 1));
 num2 = atoi(*(argv + 2));
 res = num *num2;
 printf("%d\n", res);
-}
 exit(EXIT_SUCCESS);
 return (0);
+}
 }
