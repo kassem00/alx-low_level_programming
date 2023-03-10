@@ -10,9 +10,11 @@ int main(int argc, char **argv)
 {
 int num, num2, res;
 if (argc == 1)
+{
 printf("Error\n");
 return (1);
 exit(EXIT_SUCCESS);
+}
 else
 {
 num = atoi(*(argv + 1));
