@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _memset - uppercase letters
- * @s: input char
- * @b: input char
- * @n: input char
- * Return: char.
+ * main - funcation main
+ * @argv: input char
+ * @argc: input int
+ * Return: 0.
  */
 int main(int argc, char **argv)
 {
