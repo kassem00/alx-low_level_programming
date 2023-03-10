@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 while (argc--)
 {
 }
-printf("%d\n", atoi(*(argv + 1))*atoi(*(argv + 2)));
+printf("%d\n", atoi(*(argv + 1)) * atoi(*(argv + 2)));
 exit(EXIT_SUCCESS);
 return (0);
 }
