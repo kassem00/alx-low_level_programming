@@ -8,20 +8,28 @@
  */
 int main(int argc, char **argv)
 {
-int num, num2, res;
-if (argc == 1)
+int counter, n1, n2, resualt;
+counter = n1 = n2 = resualt = 0;
+if (argc > 0)
 {
-printf("Error\n");
-return (1);
-exit(EXIT_SUCCESS);
+while (counter < argc)
+{
+if (argc == 3)
+{
+if (counter == 1)
+n1 = atoi(argv[counter]);
+else if (counter == 2)
+n2 = atoi(argv[counter]);
 }
 else
 {
-num = atoi(*(argv + 1));
-num2 = atoi(*(argv + 2));
-res = num *num2;
-printf("%d\n", res);
-exit(EXIT_SUCCESS);
-return (0);
+printf("Error\n");
+return (1);
 }
+resualt = (n1 * n2);
+counter++;
+}
+printf("%d\n", resualt);
+}
+return (0);
 }
