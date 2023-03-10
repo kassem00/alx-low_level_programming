@@ -8,10 +8,16 @@
  */
 int main(int argc, char **argv)
 {
+int num, num2, res;
 if (argc == 1)
 printf("Error\n");
 else
-printf("%d\n", atoi(*(argv + 1)) * atoi(*(argv + 2)));
+{
+num = atoi(*(argv + 1));
+num2 = atoi(*(argv + 2));
+res = num * num2;
+printf("%d\n", res);
+}
 exit(EXIT_SUCCESS);
 return (0);
 }
