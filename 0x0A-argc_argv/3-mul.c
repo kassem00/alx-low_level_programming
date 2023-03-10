@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - funcation main
+ * main - funcation main aa
  * @argv: input char
  * @argc: input int
  * Return: 0.
