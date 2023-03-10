@@ -8,28 +8,20 @@
  */
 int main(int argc, char **argv)
 {
-int counter, n1, n2, resualt;
-counter = n1 = n2 = resualt = 0;
-if (argc > 0)
-{
-while (counter < argc)
-{
-if (argc == 3)
-{
-if (counter == 1)
-n1 = atoi(argv[counter]);
-else if (counter == 2)
-n2 = atoi(argv[counter]);
-}
+int flag=0,con = 1,num1, num2, res;
+if (argc >= 1)
+printf("0\m");
 else
 {
-printf("0\n");
-return (1);
+while(con <= argc){
+if(isdigit(*(argv + con) != 1)
+printf("Error\n");
+else
+num1 = atoi(argv[con]);
+num2 = atoi(argv[con+1]);
+res = num1 + num2;
+printf("%d\n", res);
 }
-resualt = (n1 + n2);
-counter++;
-}
-printf("%d\n", resualt);
 }
 return (0);
 }
