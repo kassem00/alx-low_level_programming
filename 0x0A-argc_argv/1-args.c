@@ -9,8 +9,8 @@
 int main(int argc, char **argv)
 {
 if (argc > 0)
-printf("%d\n", argc-1);
-**argv=	argc;
+printf("%d\n", argc - 1);
+**argv = argc;
 exit(EXIT_SUCCESS);
 return (0);
 }
