@@ -6,18 +6,18 @@
  */
 char *_strdup(char *str)
 {
-int ret,size = _strlen(str),i;
+int ret, size = _strlen(str), i;
 char *ma_str;
 if (str == NULL)
 ret = 1;
 else
 {
-ma_str = malloc((sizeof(char) *size) +1);
+ma_str = malloc((sizeof(char) *size) + 1);
 if (ma_str == NULL)
 ret = 1;
 else
 {
-for (i = 0; str[i] != '\0';i++)
+for (i = 0; str[i] != '\0'; i++)
 ma_str[i] = str[i];
 ma_str[i] = '\0';
 ret = 2;
