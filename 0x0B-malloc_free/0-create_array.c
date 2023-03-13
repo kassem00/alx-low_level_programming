@@ -6,10 +6,11 @@
  *
  * Return: Nothing.
  */
-char *create_array(unsigned int size, char c){
+char *create_array(unsigned int size, char c)
+{
 char *array_of_char;
- unsigned int i,ret;
-if (size == 0)
+unsigned int i, ret;
+if (size == 0 || c == NULL)
 ret = 1;
 else
 {
