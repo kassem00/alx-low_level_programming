@@ -12,7 +12,7 @@ if (size == 0)
 return (NULL);
 else
 {
-array_of_char = mallo(sizeof(char) * size); 
+array_of_char = malloc(sizeof(char) * size); 
 array_of_char[0] = c;
 }
 return (array_of_char);
