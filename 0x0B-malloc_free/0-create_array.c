@@ -15,7 +15,7 @@ ret = 1;
 else
 {
 array_of_char = malloc(sizeof(char) * size);
-if (*array_of_char = NULL)
+if (array_of_char == ((void*)0))
 ret = 1;
 else
 {
