@@ -12,11 +12,16 @@ if (str == NULL)
 ret = 1;
 else
 {
-ma_str = malloc((sizeof(char) * size) + 1);
+array_of_char = malloc((sizeof(char) * size) + 1);
+if (array_of_char == NULL)
+ret = 1;
+else
+{
 for (i = 0; str[i] != '\0'; i++)
 ma_str[i] = str[i];
 ma_str[i] = '\0';
 ret = 2;
+}
 }
 if (ret == 1)
 return (NULL);
