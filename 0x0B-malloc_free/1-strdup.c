@@ -7,7 +7,7 @@
 char *_strdup(char *str)
 {
 int ret, size = _strlen(str), i;
-char *ma_str;
+char *array_of_char;
 if (str == NULL)
 ret = 1;
 else
@@ -18,15 +18,15 @@ ret = 1;
 else
 {
 for (i = 0; str[i] != '\0'; i++)
-ma_str[i] = str[i];
-ma_str[i] = '\0';
+array_of_char[i] = str[i];
+array_of_char[i] = '\0';
 ret = 2;
 }
 }
 if (ret == 1)
 return (NULL);
 else
-return (ma_str);
+return (array_of_char);
 }
 
 /**
