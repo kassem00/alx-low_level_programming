@@ -21,5 +21,5 @@ ret = 2;
 if (ret == 1)
 return (NULL);
 else
-return (ma_str)
+return (ma_str);
 }
