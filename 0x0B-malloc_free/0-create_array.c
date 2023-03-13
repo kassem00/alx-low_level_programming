@@ -16,6 +16,6 @@ else
 array_of_char = malloc(sizeof(char) * size); 
 for (i = 0; i < size ;i++)
 array_of_char[i] = c;
-}
 return (array_of_char);
+}
 }
