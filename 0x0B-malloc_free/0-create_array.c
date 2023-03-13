@@ -14,8 +14,8 @@ if (size == 0)
 ret = 1;
 else
 {
-array_of_char = malloc(sizeof(char) * size);
-if (* array_of_char == NULL)
+array_of_char = malloc(sizeof(char) *size);
+if (*array_of_char == NULL)
 ret = 1;
 else
 {
