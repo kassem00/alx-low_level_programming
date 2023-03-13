@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * create_array - immpalimante funcation array
- * @c: the char .
- * @size: the size of the memory to print
- * Return: Nothing.
+ * *_strdup - immpalimante funcation array
+ * @str: the char .
+ * Return: char.
  */
 char *_strdup(char *str)
 {
