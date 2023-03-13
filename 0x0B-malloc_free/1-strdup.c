@@ -13,7 +13,7 @@ ret = 1;
 else
 {
 array_of_char = malloc((sizeof(char) * size) + 1);
-if (array_of_char == NULL)
+if (array_of_char == NULL || size == 0)
 ret = 1;
 else
 {
