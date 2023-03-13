@@ -12,8 +12,8 @@ if (str == NULL)
 ret = 1;
 else
 {
-ma_str = malloc((sizeof(char) *size) + 1);
-if (ma_str == NULL)
+ma_str = malloc((sizeof(char) * size) + 1);
+if (str == NULL)
 ret = 1;
 else
 {
