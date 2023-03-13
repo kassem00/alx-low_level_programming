@@ -16,9 +16,10 @@ ma_str = malloc(sizeof(char) *size);
 for (i = 0; str[i] != '\0';i++)
 ma_str[i] = str[i];
 ma_str[i] = '\0';
+ret = 2;
 }
 if (ret == 1)
 return (NULL);
 else
-
+return (ma_str)
 }
