@@ -16,5 +16,5 @@ else
 ptr = malloc((height * width) * sizeof(int));
 for (i = 0; i < width * height; i++)
 ptr[i] = 0;
-return (*ptr);
+return (ptr);
 }
