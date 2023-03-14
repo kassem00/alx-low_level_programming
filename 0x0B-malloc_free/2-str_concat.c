@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * *_strdup - immpalimante funcation array
+ * str_concat - immpalimante funcation array
  * @s1: the char.
- * @s1: the char.
+ * @s2: the char.
  * Return: char.
  */
 char *str_concat(char *s1, char *s2)
@@ -27,7 +27,7 @@ array_of_char[i] = s1[i];
 }
 if (j > 0)
 {
-for (j = 0; s2[j] != '\0'; j++ ,i++)
+for (j = 0; s2[j] != '\0'; j++, i++)
 array_of_char[i] = s2[j];
 array_of_char[i] = '\0';
 }
