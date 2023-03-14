@@ -18,5 +18,5 @@ return (NULL);
 for (i = 0; str[i] != '\0'; i++)
 array_of_char[i] = str[i];
 array_of_char[i] = '\0';
-return (array_of_char);	
+return (array_of_char);
 }
