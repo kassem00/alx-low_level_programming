@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * str_concat - immpalimante funcation array
- * @s1: the char.
- * @s2: the char.
+ * alloc_grid - immpalimante funcation array
+ * @width: input int.
+ * @height: input int.
  * Return: char.
  */
 int **alloc_grid(int width, int height)
 {
-int **arra;	
-int row, col;	
+int **arra;
+int row, col;
 if (width <= 0 || height <= 0)
-return (NULL);	
-arra = malloc(sizeof(int *) * height);	
-if (arra == NULL)	
-return (NULL);	
+return (NULL);
+arra = malloc(sizeof(int *) * height);
+if (arra == NULL)
+return (NULL);
 for (row = 0; row < height; row++)
 {
 arra[row] = malloc(sizeof(int) * width);
