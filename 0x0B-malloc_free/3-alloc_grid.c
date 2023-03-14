@@ -5,7 +5,7 @@
  * @s2: the char.
  * Return: char.
  */
-int **alloc_grid(int width, int height);
+int **alloc_grid(int width, int height)
 {
 int i, j, *ptr;
 if (width <= 0 || height <= 0)
