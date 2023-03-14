@@ -9,12 +9,16 @@ char *_strdup(char *str)
 int ret, size = _strlen(str), i;
 char *array_of_char;
 if (str == NULL)
+{
 ret = 1;
+}
 else
 {
 array_of_char = malloc((sizeof(char) * size) + 1);
-if (array_of_char == NULL || size == 0)
+if (array_of_char == NULL)
+{
 ret = 1;
+}
 else
 {
 for (i = 0; str[i] != '\0'; i++)
