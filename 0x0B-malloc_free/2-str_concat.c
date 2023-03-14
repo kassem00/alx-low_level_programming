@@ -9,9 +9,13 @@ char *str_concat(char *s1, char *s2)
 {
 int i = 0, j = 0;
 char *array_of_char;
-while (s1[i] != '\0' && s1 != NULL)
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
+while (s1[i] != '\0')
 i++;
-while (s2[j] != '\0' && s2 != NULL)
+while (s2[j] != '\0')
 j++;
 array_of_char = malloc((sizeof(char) * (i + j + 1)));
 if (array_of_char == NULL)
