@@ -6,43 +6,17 @@
  */
 char *_strdup(char *str)
 {
-int ret, size = _strlen(str), i;
+int i = 0;
 char *array_of_char;
-array_of_char = malloc((sizeof(char) * size) + 1);
+if (str == NULL)	
+return (NULL);	
+while (str[i] != '\0')
+i++;
+array_of_char = malloc((sizeof(char) * (i + 1)));
 if (array_of_char == NULL)
-{
-ret = 1;
-}
-else
-{
+return (NULL);
 for (i = 0; str[i] != '\0'; i++)
 array_of_char[i] = str[i];
 array_of_char[i] = '\0';
-ret = 2;
-}
-if (ret == 1)
-return (NULL);
-else
-return (array_of_char);
-}
-
-/**
- * _strlen - function that returns the length of a string.
- * @s: pointer to char
- * Return: int
- */
-
-int _strlen(char *s)
-{
-int i = 0;
-char temp;
-while (i < i + 1)
-{
-temp = s[i];
-if (temp == '\0')
-break;
-else
-i++;
-}
-return (i);
+return (array_of_char);	
 }

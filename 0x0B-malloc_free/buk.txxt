@@ -1,0 +1,53 @@
+#include "main.h"
+/**
+ * *_strdup - immpalimante funcation array
+ * @str: the char .
+ * Return: char.
+ */
+char *_strdup(char *str)
+{
+int ret = 0, size = _strlen(str), i;
+char *array_of_char;
+if(str != NULL && _strlen(str) != 0){
+array_of_char = (char*)malloc((sizeof(char) * size) + 1);
+if (((array_of_char - 1) == 0 &&\
+ size == 0) || (_strlen(array_of_char) - 1) == 0)
+{
+ret = 1;
+}
+else
+{
+for (i = 0; str[i] != '\0'; i++)
+array_of_char[i] = str[i];
+array_of_char[i] = '\0';
+ret = 2;
+}
+}
+else
+ret = 1;
+if (ret == 1)
+return (NULL);
+else
+return (array_of_char);
+}
+
+/**
+ * _strlen - function that returns the length of a string.
+ * @s: pointer to char
+ * Return: int
+ */
+
+int _strlen(char *s)
+{
+int i = 0;
+char temp;
+while (i < i + 1)
+{
+temp = s[i];
+if (temp == '\0')
+break;
+else
+i++;
+}
+return (i);
+}
