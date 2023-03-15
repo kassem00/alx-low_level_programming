@@ -16,16 +16,18 @@ for (i = 0; i<ac; i++)
 for(x = 0; av[i][x] != '\0'; x++);
 count = count + x;
 }
-ptr_arr_char = malloc(sizeof(char) * count);
+ptr_arr_char = malloc((sizeof(char) * count) + ac);
 if (ptr_arr_char == NULL)
 return (NULL);
 for (i = 0; i<ac; i++)
 {
 for(x = 0; av[i][x] != '\0'; x++)
 {
-ptr_arr_char = av[i][x];
+*(ptr_arr_char + count) = av[i][x];
+count--;
 }
-ptr_arr_char = '\n';
+*(ptr_arr_char + count) = '\n';
+count--;
 }
 ptr_arr_char = '\0';
 return(ptr_arr_char);
