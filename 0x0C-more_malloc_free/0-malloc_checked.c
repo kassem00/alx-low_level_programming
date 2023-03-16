@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * create_array - immpalimante funcation array
- * @c: the char .
- * @size: the size of the memory to print
- * Return: Nothing.
+ * malloc_checked -  function that allocates memory using
+ * @b: unsigned int.
+ * Return: pointer.
  */
 void *malloc_checked(unsigned int b)
 {
