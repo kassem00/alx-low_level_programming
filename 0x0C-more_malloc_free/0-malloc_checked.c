@@ -5,12 +5,12 @@
  * @size: the size of the memory to print
  * Return: Nothing.
  */
-void *malloc_checked(uint8_t b);
+void *malloc_checked(unsigned int b)
 {
-uint8_t *array_of;
+void *array_of;
 array_of = malloc(b);
 if (array_of == NULL)
-return (98);
+exit(98);
 else
 return (array_of);
 }
