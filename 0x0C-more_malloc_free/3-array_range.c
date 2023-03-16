@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * array_range -  function that allocates memory using
+ * array_range - function that allocates memory using
  * @min: int.
  * @min: int.
  * Return: pointer.
