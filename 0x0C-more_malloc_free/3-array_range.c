@@ -2,7 +2,7 @@
 /**
  * array_range - function that allocates memory using
  * @min: int.
- * @min: int.
+ * @max: int.
  * Return: pointer.
  */
 int *array_range(int min, int max)
