@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * malloc_checked -  function that allocates memory using
- * @b: unsigned int.
+ * _calloc -  function that allocates memory using
+ * @nmemb: unsigned int.
+ * @size: unsigned int.
  * Return: pointer.
  */
 void *_calloc(unsigned int nmemb, unsigned int size);
