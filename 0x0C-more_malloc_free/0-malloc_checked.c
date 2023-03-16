@@ -1,10 +1,12 @@
 #include "main.h"
 /**
- * malloc_checked -  function that allocates memory using
- * @b: unsigned int.
- * Return: pointer.
+ * string_nconcat -  function that allocates memory using
+ * @n: unsigned int.
+ * @n: input char.
+ * @n: input char.
+ * Return: pointer to char.
  */
-void *malloc_checked(unsigned int b)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 void *array_of;
 array_of = malloc(b);
