@@ -1,6 +1,6 @@
 #ifndef STR_H
 #define STR_H
-
+#include <stdlib.h>
 /**
  * struct dog - dog bass
  * @name: dog name
