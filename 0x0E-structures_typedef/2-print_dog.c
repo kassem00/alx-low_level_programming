@@ -6,7 +6,7 @@
  * @age: dog age
  * @owner: ownder name
  */
-dog_t *new_dog(char *name, float age, char *owner)
+void print_dog(struct dog *d)
 {
 dog_t *d;
 if (d != NULL)
