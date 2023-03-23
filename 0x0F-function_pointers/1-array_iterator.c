@@ -3,7 +3,7 @@
 /**
  * array_iterator - prints a name
  * @array: name of the person
- * @size: pointer to funcation
+ * @size: size of array
  * @action: pointer to funcation
  * Return: void.
  */
