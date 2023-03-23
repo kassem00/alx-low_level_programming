@@ -1,10 +1,10 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - prints a name
+ * int_index - index funcation
  * @array: name of the person
  * @size: size of array
- * @action: pointer to funcation
+ * @mcp: pointer to funcation
  * Return: void.
  */
 int int_index(int *array, int size, int (*cmp)(int))
