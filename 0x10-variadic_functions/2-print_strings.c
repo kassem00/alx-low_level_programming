@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 /**
- * print_numbers - Write a function that prints numbers
+ * print_strings - Write a function that prints numbers
  * @n: The number of paramters passed to the function.
  * @separator: is the string to be printed between numbers
  * @...: A variable number of paramters .
