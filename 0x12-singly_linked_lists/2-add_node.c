@@ -1,5 +1,4 @@
-	#include "lists.h"
-
+#include "lists.h"
 /**
  * add_node - adds a new node .
  * @head: pointer to point to pointer.
