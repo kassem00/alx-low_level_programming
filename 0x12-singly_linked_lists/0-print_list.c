@@ -1,7 +1,7 @@
 #include "lists.h"
-/*
- * print_list - Print function.
- * @h: input .
+/**
+ * print_list - prints linked list.
+ * @h: pointer .
  * Return: size_t.
  */
 
@@ -21,5 +21,5 @@ printf("[%u] %s\n", h->len, h->str);
 h = h->next;
 num_nodes++;
 }
-return num_nodes;
+return (num_nodes);
 }
