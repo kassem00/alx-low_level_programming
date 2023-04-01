@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_node - adds a new node .
+ * free_list - adds a new node .
  * @head: pointer to point to pointer.
  * Return: void;
  */
