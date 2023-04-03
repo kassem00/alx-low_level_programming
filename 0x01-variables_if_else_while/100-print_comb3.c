@@ -6,25 +6,21 @@
 * followed by a new line.
 * Return: 0
 */
-int main(void)
-{
-int num_1 = 48,num_2;
-while (num_1 <= 57)
-{
-num_2= num_1 + 1;
-while (num_2 <= 57)
-{
-putchar(num_1);
-putchar(num_2);
-if (num_2 != 57)
-{
-putchar(',');  
+int main() {
+int i, j;
+for (i = 0; i < 9; i++) {
+for (j = i + 1; j < 10; j++) {
+if (i == 0 && j == 1) {
+continue;
+}
+putchar(i + '0');
+putchar(j + '0');
+if (i != 8 || j != 9) {
+putchar(',');
 putchar(' ');
 }
-num_2++;
 }
-num_1++;
 }
 putchar('\n');
-return(0);
+return 0;
 }
