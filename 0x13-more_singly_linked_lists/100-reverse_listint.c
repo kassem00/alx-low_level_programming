@@ -3,9 +3,7 @@
 /**
  * reverse_listint - deletes a node in a linked list at a certain index
  * @head: pointer to the first element in the list
- * @index: index of the node to delete
- *
- * Return: 1 (Success), or -1 (Fail)
+ * Return: listint_t
  */
 
 listint_t *reverse_listint(listint_t **head)
