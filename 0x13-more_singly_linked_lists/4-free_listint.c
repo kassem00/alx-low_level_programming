@@ -1,5 +1,4 @@
 #include "lists.h"
-11;rgb:0000/0000/0000
 /**
  * free_listint - frees a listint_t linked list
  * @head: pointer to the head of the list
