@@ -9,9 +9,10 @@
  */
 size_t looped_listint_len(const listint_t *head)
 {
+const listint_t *slow_ptr = head, *fast_ptr = head;
 if (head == NULL || head->next == NULL)
 return (0);
-const listint_t *slow_ptr = head, *fast_ptr = head;
+
 while (fast_ptr && fast_ptr->next)
 {
 slow_ptr = slow_ptr->next;
