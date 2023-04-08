@@ -1,10 +1,8 @@
 #include "main.h"
 /**
- * init_dog - function initialize a variable of type struct
- * @d: name of struct
- * @name: dog name
- * @age: dog age
- * @owner: ownder name
+ * binary_to_uint - BIN2DEC
+ * @d: input Binary
+ * Return: unsigned int
  */
 unsigned int binary_to_uint(const char *b)
 {
@@ -23,13 +21,11 @@ counter++;
 return (res);
 }
 
-
 /**
- * init_dog - function initialize a variable of type struct
- * @d: name of struct
- * @name: dog name
- * @age: dog age
- * @owner: ownder name
+ * power - function power number
+ * @number: input numper
+ * @as: power as
+ * Return: int
  */
 
 int power(int number, int as)
@@ -40,7 +36,11 @@ if (as == 0)
 return (1);
 return (number * power(number, as - 1));
 }
-
+/**
+ * _strlen - length of string
+ * @s: input char
+ * Return: int
+ */
 
 int _strlen(const char *s)
 {
