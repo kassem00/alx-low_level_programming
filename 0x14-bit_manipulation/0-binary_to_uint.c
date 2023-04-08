@@ -1,19 +1,19 @@
 #include "main.h"
 /**
  * binary_to_uint - BIN2DEC
- * @d: input Binary
+ * @b: input Binary
  * Return: unsigned int
  */
 unsigned int binary_to_uint(const char *b)
 {
-int max =_strlen(b), counter = 0;
+int max = _strlen(b), counter = 0;
 unsigned int res = 0;
 if (b == NULL)
 return (0);
-while(max >= 0 && max--)
+while (max >= 0 && max--)
 {
 if (*(b + max) == '1')
-res += power(2,counter);
+res += power(2, counter);
 else if (*(b + max) != '0')
 return (0);
 counter++;
