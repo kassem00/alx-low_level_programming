@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_binary - DX2BIN
+ * print_binary - DX2BIN function
  * @n: input decimal
  * Return: void
  */
