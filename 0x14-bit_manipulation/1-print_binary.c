@@ -10,14 +10,15 @@ int i, f = 0;
 if (n == 0)
 _putchar('0');
 else
-for (i = 31; i >= 0; i--) {
+for (i = 31; i >= 0; i--)
+{
 int mask = (1 << i);
 if (n & mask)
 {
 _putchar('1');
 f = 1;
 }
-if (!(n & mask) && f ==1)
+if (!(n & mask) && f == 1)
 _putchar('0');
 }
 } 
