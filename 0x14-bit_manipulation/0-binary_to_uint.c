@@ -6,19 +6,21 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-int max = _strlen(b), counter = 0;
+int max, counter = 0;
 unsigned int res = 0;
 if (b == NULL)
 return (0);
-while (max >= 0 && max--)
+max = _strlen(b);
+while (max-- && max >= 0)
 {
-if (*(b + max) == '1')
+if (b[max] == '1')
 res += power(2, counter);
-else if (*(b + max) != '0')
+else if (b[max] != '0')
 return (0);
 counter++;
 }
 return (res);
+
 }
 
 /**
@@ -37,7 +39,7 @@ return (1);
 return (number * power(number, as - 1));
 }
 /**
- * _strlen - length of string
+ * _strlen - maxgth of string
  * @s: input char
  * Return: int
  */
