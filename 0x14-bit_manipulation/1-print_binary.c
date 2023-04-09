@@ -14,7 +14,7 @@ return;
 }
 for (i = 16; i >= 0; i--)
 {
-int mk = (1 << i);
+unsigned long mk = (1 << i);
 if (n & mk)
 {
 _putchar('1');
