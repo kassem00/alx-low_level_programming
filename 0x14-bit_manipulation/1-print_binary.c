@@ -17,7 +17,7 @@ if (n & mk)
 _putchar('1');
 f = 1;
 }
-if (f == 1)
+if (!(n & mk) && f == 1)
 _putchar('0');
 }
 } 
