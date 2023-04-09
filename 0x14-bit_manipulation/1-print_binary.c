@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * binary_to_uint - BIN2DEC
- * @b: input Binary
+ * print_binary - DX2BIN
+ * @n: input decimal
  * Return: unsigned int
  */
 void print_binary(unsigned long int n)
@@ -12,13 +12,13 @@ _putchar('0');
 else
 for (i = 31; i >= 0; i--)
 {
-int mask = (1 << i);
-if (n & mask)
+int mk = (1 << i);
+if (n & mk)
 {
 _putchar('1');
 f = 1;
 }
-if (!(n & mask) && f == 1)
+if (!(n & mk) && f == 1)
 _putchar('0');
 }
 } 
