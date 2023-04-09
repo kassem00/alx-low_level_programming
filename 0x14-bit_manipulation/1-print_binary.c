@@ -1,26 +1,35 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
+
 /**
- * print_binary - DX2BIN function
- * @n: input decimal
+ * print_binary - prints the binary representation of a number
+ * @n: decimal number to convert to binary
  * Return: void
  */
 void print_binary(unsigned long int n)
 {
-int i, f = 0;
-if (n == 0)
-{
-_putchar('0');
-return;
+	int i, flag = 0;
+
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
+
+	for (i = 63; i >= 0; i--)
+	{
+		unsigned long int mask = 1UL << i;
+
+		if (n & mask)
+		{
+			_putchar('1');
+			flag = 1;
+		}
+		else if (flag)
+		{
+			_putchar('0');
+		}
+	}
+
 }
-for (i = 16; i >= 0; i--)
-{
-unsigned long mk = (1 << i);
-if (n & mk)
-{
-_putchar('1');
-f = 1;
-}
-if (!(n & mk) && f == 1)
-_putchar('0');
-}
-} 
