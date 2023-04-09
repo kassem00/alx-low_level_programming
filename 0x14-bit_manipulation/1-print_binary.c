@@ -2,7 +2,7 @@
 /**
  * print_binary - DX2BIN
  * @n: input decimal
- * Return: unsigned int
+ * Return: void
  */
 void print_binary(unsigned long int n)
 {
