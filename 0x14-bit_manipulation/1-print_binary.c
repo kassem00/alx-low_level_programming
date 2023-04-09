@@ -9,7 +9,6 @@ void print_binary(unsigned long int n)
 int i, f = 0;
 if (n == 0)
 _putchar('0');
-else
 for (i = 12; i >= 0; i--)
 {
 int mk = (1 << i);
