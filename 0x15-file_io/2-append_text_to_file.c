@@ -7,11 +7,11 @@
 int _strlen(char *s)
 {
 int len = 0;
-while (*(s+len) != '\0')
+while (*(s + len) != '\0')
 {
 len++;
 }
-return len;
+return (len);
 }
 /**
  * append_text_to_file - appends text to a file
