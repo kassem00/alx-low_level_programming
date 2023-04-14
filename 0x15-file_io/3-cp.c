@@ -5,63 +5,40 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#define BUFF_SIZE 1024
+
 /**
  * main - Program that copies the content of a file into another file
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: 0 on success, or the error code on failure
+ * @argc: Quantity of arguments
+ * @argv: Input arguments
+ *
+ * Return: 0 on success, otherwise exit with appropriate error codes.
  */
 int main(int argc, char *argv[])
 {
-int fd1, fd2;
-ssize_t read_in, write_out;
-char buf[1024];
-mode_t file_perm = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
+int fd_fr, file_to, num_re, num_wr;
+char buff[BUFF_SIZE];
 if (argc != 3)
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
+fd_fr = open(argv[1], O_RDONLY);
+if (fd_fr == -1)
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+if (file_to == -1)
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+while ((num_re = read(fd_fr, buff, BUFF_SIZE)) > 0)
 {
-dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-return (97);
+num_wr = write(file_to, buff, num_re);
+if (num_wr == -1)
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 }
-fd1 = open(argv[1], O_RDONLY);
-if (fd1 == -1)
-{
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-return (98);
-}
-fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, file_perm);
-if (fd2 == -1)
-{
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-close(fd1);
-return (99);
-}
-while ((read_in = read(fd1, buf, 1024)) > 0)
-{
-write_out = write(fd2, buf, read_in);
-if (write_out == -1 || write_out != read_in)
-{
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-close(fd1);
-close(fd2);
-return (99);
-}
-}
-if (read_in == -1)
-{
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-close(fd1);
-close(fd2);
-return (98);
-}
-if (close(fd1) == -1)
-{
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd1);
-return (100);
-}
-if (close(fd2) == -1)
-{
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2);
-return (100);
-}
+if (num_re == -1)
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+num_wr = close(fd_fr);
+if (num_wr == -1)
+dprintf(STDERR_FILENO, "Error: Can't close fd_fr %d\n", fd_fr), exit(100);
+num_wr = close(file_to);
+if (num_wr == -1)
+dprintf(STDERR_FILENO, "Error: Can't close fd_fr %d\n", file_to), exit(100);
 return (0);
 }
