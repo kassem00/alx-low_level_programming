@@ -49,7 +49,7 @@ char buffer[BUFFER_SIZE];
 int num_read, num_written;
 while ((num_read = read(source_fd, buffer, BUFFER_SIZE)) > 0)
 {
-num_written = write(destination_fd, buffer, num_read;
+num_written = write(destination_fd, buffer, num_read);
 if (num_written == -1)
 {
 char message[100];
