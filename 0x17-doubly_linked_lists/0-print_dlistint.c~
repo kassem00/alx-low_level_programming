@@ -1,0 +1,10 @@
+#include <lists.h>
+/**K
+ * print_dlistint - funcation that print linked list
+ * @dlistint_t:linked list node
+ * Return: size_t which number of node
+ */
+size_t print_dlistint(const dlistint_t *h)
+{
+
+}
