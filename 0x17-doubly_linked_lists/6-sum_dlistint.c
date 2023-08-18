@@ -1,9 +1,8 @@
 #include "lists.h"
 
 /**
- * get_dnodeint_at_index - funcation that get data by index
+ * sum_dlistint - funcation that sum all value in int linked list
  * @head:linked list node
- * @index:index to get data
  * Return: size_t which number of node
  */
 int sum_dlistint(dlistint_t *head)
