@@ -3,7 +3,7 @@
 /**
  * delete_dnodeint_at_index - deletes the node at index
  * @head: linked list node
- * @index:  index 
+ * @index:  index
  * Return: int value
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
