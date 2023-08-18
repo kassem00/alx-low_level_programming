@@ -1,10 +1,9 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - function that add node in head
+ * free_dlistint - function that free full linkedlist
  * @head:linked list node
- * @n:data to store in new node
- * Return: size_t which number of node
+ * Return: void
  */
 void free_dlistint(dlistint_t *head)
 {
