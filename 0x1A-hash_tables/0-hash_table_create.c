@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 /**
  * hash_table_create - creat hash table
- * @size : size of hash taple
+ * @size: size of hash taple
  * Return: Always EXIT_SUCCESS.
  */
 hash_table_t *hash_table_create(unsigned long int size)
