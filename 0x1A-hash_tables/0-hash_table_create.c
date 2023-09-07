@@ -14,7 +14,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 	for (i = 0; i < (int)size; i++)
 	{
 		t_head = t_head->next;
-		t_head->next = malloc(sizeof(hash_node_t));
+		t_head = malloc(sizeof(hash_node_t));
 	}
+	t_head->next = NULL;
 	return (p);
 }
