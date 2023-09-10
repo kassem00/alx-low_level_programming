@@ -2,8 +2,8 @@
 #define HASH_H
 #define SIZE_OF_TABLE 1024
 #include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
 
 /**
  * struct hash_node_s - Node of a hash table
