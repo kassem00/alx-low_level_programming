@@ -1,0 +1,8 @@
+#include "h.h"
+
+
+
+int main(){
+	hash_table_t *t = hash_table_create(10);
+	
+}
