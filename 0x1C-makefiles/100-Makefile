@@ -2,7 +2,6 @@ CC=gcc
 SRC=main.c school.c
 OBJ=$(SRC:%.c=%.o)
 NAME=school
-RM=rm
 CFLAGS=-Wall -Werror -Wextra -pedantic
 
 .PHONY: re oclean fclean clean all
@@ -10,7 +9,6 @@ CFLAGS=-Wall -Werror -Wextra -pedantic
 all: $(NAME)
 
 $(NAME): m.h $(OBJ)
-# $@: replace by objective name
 	$(CC) $(OBJ) -o $@
 
 clean:
