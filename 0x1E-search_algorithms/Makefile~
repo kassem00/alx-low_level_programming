@@ -1,9 +1,0 @@
-CC=gcc
-FLAGS=-Wall -Werror -Wextra -pedantic -std=gnu89
-all : ex_1
-
-ex_1 : 0-main.c 0-linear.c
-	$(CC) $(FLAGS) -o 0-linear
-
-ex_2 :  1-*.c
-	$(CC) $(FLAGS) -o 0-binary

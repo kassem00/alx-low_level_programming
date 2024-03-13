@@ -10,3 +10,7 @@ ex_1 : 0-main.c 0-linear.c
 ex_2 :  1-*.c
 	$(CC) $(FLAGS) $(SR_2) -o 0-binary
 	betty 1-*.c
+tes_1  : tes.c 1-binary.c
+	$(CC) $(FLAGS) tes.c 1-binary.c -o tes_1
+clean :
+	rm *~
