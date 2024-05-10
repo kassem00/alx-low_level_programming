@@ -7,4 +7,5 @@
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
 void insertion_sort(int *array, size_t size);
+void get_mid(int *array, int  *mid, int *j, int *i, char be);
 #endif
