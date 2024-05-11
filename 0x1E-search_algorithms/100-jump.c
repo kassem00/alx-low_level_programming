@@ -25,13 +25,12 @@ int min(int a, int b)
  */
 int jump_search(int *array, size_t size, int value)
 {
-	int step = sqrt(size); /* Block size to be jumped */
-	int prev = 0;          /* Previous block index */
+	int step = sqrt(size); 
+	int prev = 0;
 
 	if (array == NULL)
 		return (-1);
 
-	/* Jump from block to block */
 	while (array[min(step, size) - 1] < value)
 	{
 		printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
@@ -43,7 +42,6 @@ int jump_search(int *array, size_t size, int value)
 
 	printf("Value found between indexes");
 	printf(" [%d] and [%d]\n", prev, min(step, size) - 1);
-	/* Linear search for value in block starting with prev */
 	while (array[prev] < value)
 	{
 		printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
