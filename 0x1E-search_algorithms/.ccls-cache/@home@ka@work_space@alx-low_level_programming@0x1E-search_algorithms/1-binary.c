@@ -2,97 +2,54 @@
 #define N 0
 #define SM -1
 #define BIG  1
-/**
- * binary_search - fun fact it's binary_search functionn
- * @array: pointer to first element in array
- * @size: array size
- * @value: element to found in array
- * Return: -1 on error else the index it found the number in it
- */
 
+/**
+ * binary_search - Searches for a value in a sorted array.
+ * @array: pointer to the first element of the array to search in
+ * @size: number of elements in the array
+ * @value: the value to search for
+ * Return: the index where value is located, or -1 if not found
+ */
 int binary_search(int *array, size_t size, int value)
 {
-	static int mid = 0, i, j = -1;
+	static int i = 0, j = -1, mid = 0, first_call = 1;
+	int k = 0;
 
-	if (j == -1)
-		j = size;
-	if (i > j)
-		return (-1);
-
-	if (array == NULL)
-		return (-1);
-
-	get_mid(array, &mid, &j, &i, N);
-	if ( value > array[mid] )
+	if (first_call)
 	{
-		get_mid(array, &mid, &j, &i, BIG);
-		binary_search(array, size, value);
-	}
-	if ( value < array[mid] )
-	{
-		get_mid(array, &mid, &j, &i, SM);
-		binary_search(array, size, value);
+		i = 0;
+		j = size - 1;
+		first_call = 0;
 	}
 
-	if ( value == array[mid] )
+	if (i > j || array == NULL)
 	{
+		first_call = 1;
+		return (-1);
+	}
+	printf("Searching in array: ");
+	for (k = i; k <= j; k++)
+	{
+		printf("%d", array[k]);
+		if (k < j)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
+	mid = (i + j) / 2;
+	if (value == array[mid])
+	{
+		first_call = 1;
 		return (mid);
 	}
-
-	return (-1);
-}
-
-
-void get_mid(int *array, int  *mid, int *j, int *i, char be)
-{
-	int k;
-	switch (be){
-	case N:
-		*mid = (*i + *j) / 2;
-		break;
-	case SM:
-		*j = *mid - 1;
-		*mid = (*i + *j) / 2;
-		break;
-	case BIG:
-		*i = *mid + 1;
-		*mid = (*i + *j) / 2;
-		break;
-	default :
-		return ;
-	}
-
-	printf("Searching in array: ");
-	for (k = *i; k < *j -1; k++)
+	else if (value < array[mid])
 	{
-		printf("%d, ", array[k]);
+		j = mid - 1;
 	}
-	printf("%d\n", array[k]);
+	else
+	{
+		i = mid + 1;
+	}
+	return (binary_search(array, size, value));
 }
-
-/** [ Psudocode ]   
- * [4|8|10|12|18|20|31|32|40|45|55|85|87]
- *  ^		        ^              ^
- *  i		       mid	       j
- * binary_search(int value)
- * 
- * if not int or array first element == NULL{
- *	 print damm error
- *}
- * get_new_mid(mid =abslot([i + j] / 2))
- * value > arr[mid]{
- *	i = mid + 1
- *	get_new_mid()
- * }
- *
- * value < arr[mid]{
- *	j = mid -1
- * 	get_new_mid()
- * }
- * value ==  mid return;
- *
- *
- * 
- *
- *
- **/
