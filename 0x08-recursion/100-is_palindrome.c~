@@ -1,0 +1,52 @@
+int is_palindrome(char *s)
+{
+    char *start = s;
+    static char *end = 0;
+    static int length = 0;
+    int result;
+
+    /* Base case: empty string */
+    if (*s == '\0')
+    {
+        end = 0;    /* Reset static variables */
+        length = 0;
+        return 1;
+    }
+
+    /* First call: find end and length */
+    if (end == 0)
+    {
+        while (*s)
+        {
+            s++;
+            length++;
+        }
+        end = s - 1;
+        s = start;  /* Reset s to start */
+    }
+
+    /* Recursive case */
+    if (s >= end)
+    {
+        result = 1;  /* Reached middle, all matched */
+    }
+    else if (*s != *end)
+    {
+        result = 0;  /* Mismatch found */
+    }
+    else
+    {
+        end--;  /* Move end inward */
+        result = is_palindrome(s + 1);  /* Recurse */
+        end++;  /* Restore end for next call */
+    }
+
+    /* Reset static variables when done */
+    if (s == start)
+    {
+        end = 0;
+        length = 0;
+    }
+
+    return result;
+}
